@@ -19,7 +19,7 @@
  *  events specification.
  *  This file depends on w3c_event.js.
  *  The whole file has been partially type annotated.
- *  Created from http://dev.w3.org/geo/api/spec-source-orientation.
+ *  Created from http://www.w3.org/TR/orientation-event/
  *
  * @externs
  */
@@ -55,32 +55,22 @@ DeviceOrientationEvent.prototype.webkitCompassAccuracy;
 DeviceOrientationEvent.prototype.webkitCompassHeading;
 
 /**
- * @constructor
+ * @typedef {{
+ *   x: (number|null),
+ *   y: (number|null),
+ *   z: (number|null)
+ * }}
  */
-function DeviceAcceleration() {}
-
-/** @type {?number} */
-DeviceAcceleration.prototype.x;
-
-/** @type {?number} */
-DeviceAcceleration.prototype.y;
-
-/** @type {?number} */
-DeviceAcceleration.prototype.z;
+var DeviceAcceleration;
 
 /**
- * @constructor
+ * @typedef {{
+ *   alpha: (number|null),
+ *   beta: (number|null),
+ *   gamma: (number|null)
+ * }}
  */
-function DeviceRotationRate() {}
-
-/** @type {?number} */
-DeviceRotationRate.prototype.alpha;
-
-/** @type {?number} */
-DeviceRotationRate.prototype.beta;
-
-/** @type {?number} */
-DeviceRotationRate.prototype.gamma;
+var DeviceRotationRate;
 
 /**
  * @constructor
